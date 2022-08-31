@@ -6,7 +6,7 @@ on:
     #- cron: "15 0 * * *"
     
 jobs:
-  hello-world:
+  Check-Dependencies:
     runs-on: ubuntu-latest
     
     steps:
@@ -15,7 +15,7 @@ jobs:
       - name: Setup GO
         uses: actions/setup-go@v3
       - name: Run GO Script
-        run: go run main.go woiten-moduscreate aws-glue-pipeline-example -o test.csv
+        run: go run main.go github gh-gei -o test.csv
       #- name: Hello World
         #run: python hello_world.py
         #shell: sh
