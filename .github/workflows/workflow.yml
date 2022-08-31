@@ -5,8 +5,8 @@ on:
   #schedule:
     #- cron: "15 0 * * *"
     
-env:
-  GH_TOKEN: $GITHUB_TOKEN
+#env:
+  #GH_TOKEN: $GITHUB_TOKEN
   #GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
 jobs:
