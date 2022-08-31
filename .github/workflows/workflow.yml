@@ -1,14 +1,15 @@
 on:
+  workflow_dispatch:
   schedule:
     - cron: "15 0 * * *"
     
-  jobs:
-    hello-world:
-    name: Hello world
-    runs-on: ubuntu-latest
-    steps:
-    - name: Check-out devops repository
-      uses: actions/checkout@v2
-    - name: Hello World
-      run: python hello_world.py
-      shell: sh
+jobs:
+  hello-world:
+  name: Hello world
+  runs-on: ubuntu-latest
+  steps:
+  - name: Check-out devops repository
+  uses: actions/checkout@v2
+  - name: Hello World
+  run: python hello_world.py
+  shell: sh
