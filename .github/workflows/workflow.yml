@@ -2,8 +2,8 @@ name: test script
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "15 0 * * *"
+  #schedule:
+    #- cron: "15 0 * * *"
     
 jobs:
   hello-world:
@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Check-out devops repository
         uses: actions/checkout@v2
-      - name: Hello World
-        run: python hello_world.py
-        shell: sh
+      - name: Setup GO
+        uses: actions/setup-go@v3
+      - name: Run GO Script
+        run: go run 
+      #- name: Hello World
+        #run: python hello_world.py
+        #shell: sh
