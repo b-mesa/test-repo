@@ -20,7 +20,12 @@ jobs:
       - name: setup gh extension
         run: gh extension install andyfeller/gh-dependency-report
       - name: run report
-        run: gh dependency-report github gh-gei -o test.csv  
+        run: gh dependency-report github gh-gei -o test.csv
+      - name: upload report
+        uses: actions/upload-artifact@v3
+        with:
+          name: report
+          path: test.csv
       #- name: Run GO Script
        # run: go run main.go github gh-gei #-o test.csv
       #- name: Hello World
