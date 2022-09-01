@@ -16,8 +16,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup GO
         uses: actions/setup-go@v3
-      - name: setup gh extension
-        run: gh extension install andyfeller/gh-dependency-report
+      #- name: setup gh extension
+      #  run: gh extension install andyfeller/gh-dependency-report
       - name: run report
         #run: gh dependency-report github gh-gei -o test.csv 
         run: go run main.go woiten-moduscreate gh-gei -o test.csv
