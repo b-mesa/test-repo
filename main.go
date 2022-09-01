@@ -9,7 +9,7 @@ import (
 
 	//"github.com/andyfeller/gh-dependency-report/cmd"
 	//"github.com/andyfeller/gh-dependency-report/internal/log"
-	"internal/log
+	"internal/log"
 	"cmd"
 	"go.uber.org/zap"
 )
