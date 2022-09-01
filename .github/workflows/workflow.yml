@@ -5,7 +5,7 @@ on:
     #- cron: "15 0 * * *"
     
 env:
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
 jobs:
   Check-Dependencies:
