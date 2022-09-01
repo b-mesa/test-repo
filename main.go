@@ -9,8 +9,8 @@ import (
 
 	//"github.com/andyfeller/gh-dependency-report/cmd"
 	//"github.com/andyfeller/gh-dependency-report/internal/log"
-	"github.com/woiten-moduscreate/go-script-test/internal/log"
-	"github.com/woiten-moduscreate/go-script-test/cmd"
+	"../internal/log"
+	"../cmd"
 	"go.uber.org/zap"
 )
 
