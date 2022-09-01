@@ -9,9 +9,10 @@ import (
 
 	//"github.com/andyfeller/gh-dependency-report/cmd"
 	//"github.com/andyfeller/gh-dependency-report/internal/log"
-	"root.go"
 	"go.uber.org/zap"
 )
+
+go get root.go
 
 func main() {
 
