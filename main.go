@@ -7,12 +7,10 @@ package main
 import (
 	"os"
 
-	//"github.com/andyfeller/gh-dependency-report/cmd"
-	//"github.com/andyfeller/gh-dependency-report/internal/log"
+	"github.com/andyfeller/gh-dependency-report/cmd"
+	"github.com/andyfeller/gh-dependency-report/internal/log"
 	"go.uber.org/zap"
 )
-
-go get root.go
 
 func main() {
 
