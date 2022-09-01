@@ -1,12 +1,10 @@
-name: Test
-
+name: test script
 on:
-  pull_request:
-    branches:
-      – master
+  workflow_dispatch:
+  #schedule:
+    #- cron: "15 0 * * *"
     
-#env:
-  #GH_TOKEN: $GITHUB_TOKEN
+env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
 jobs:
@@ -21,6 +19,7 @@ jobs:
       - name: setup gh extension
         run: gh extension install andyfeller/gh-dependency-report
       - name: run report
+        run: gh dependency-report github gh-gei -o test.csv  
         run: gh dependency-report github gh-gei -o test.csv
       - name: upload report
         uses: actions/upload-artifact@v3
